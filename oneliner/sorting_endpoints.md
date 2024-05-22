@@ -2,7 +2,7 @@
 
 1. You must have a list of parameters. To get the parameters, you need to use different other tools to manage to get them.
 2. The parameters/endpoints must be named as `endpoints.txt` otherwise you can just change the name accordingly to what you have used.
-3. This should help in finding specific terms within the endpoints that you can use to test for XSS, SQLi and so forth. Be catious with what you do, read the **Post Scriptum** note about this.
+3. This should help in finding specific terms within the endpoints that you can use to test for XSS, SQLi and so forth. Be catious with what you do, read the **Post Scriptum** note about this. Everything you do comes from a decision of yours, no one related to the development of this repo is involved.
 
 **Note**: I'm using a codeblock for better vision from your side, however you can just copy it and paste it in the terminal and will work just as fine.
 
