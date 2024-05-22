@@ -5,6 +5,6 @@
 
 **Note**: I'm using a codeblock for better vision from your side, however you can just copy it and paste it in the terminal and will work just as fine.
 
-```
+```sh
 sort endpoints.txt | uniq > unique_endpoints.txt; grep "?" unique_endpoints.txt > parameterized_urls.txt; awk -F'[?&]' '{print $1 "?" $2}' parameterized_urls.txt | sort | uniq > sorted_params.txt; cut -d'?' -f1 parameterized_urls.txt | sort | uniq -c | sort -nr > grouped_urls.txt; while IFS= read -r url; do if [[ $url == *"id="* || $url == *"search="* || $url == *"page="* || $url == *"query="* ]]; then echo "$url"; fi; done < parameterized_urls.txt > injection_targets.txt; echo "Unique endpoints: unique_endpoints.txt"; echo "Parameterized URLs: parameterized_urls.txt"; echo "Sorted parameters: sorted_params.txt"; echo "Grouped URLs: grouped_urls.txt"; echo "Injection targets: injection_targets.txt"
 ```
